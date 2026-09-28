@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ScrollReveal from "@/components/animations/ScrollReveal";
 import GradientText from "@/components/ui/GradientText";
+import { assetPath } from "@/lib/assetPath";
 
 export default function Founder() {
   return (
@@ -29,7 +30,7 @@ export default function Founder() {
             <div className="relative overflow-hidden rounded-[32px] border border-white/10 bg-white/5 shadow-2xl">
 
               <Image
-                src="/founder/sajjad.png"
+                src={assetPath("/founder/sajjad.png")}
                 alt="Founder of ECMatie"
                 width={900}
                 height={1100}

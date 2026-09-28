@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { MessageCircle, Network, UserPlus } from "lucide-react";
+import { assetPath } from "@/lib/assetPath";
 
 export default function StudentNetwork() {
   return (
@@ -11,7 +12,7 @@ export default function StudentNetwork() {
 
             <div className="overflow-hidden rounded-[32px] border border-white bg-white p-2 shadow-[0_30px_100px_rgba(7,27,58,0.14)]">
               <Image
-                src="/screenshots/network/connections.png"
+                src={assetPath("/screenshots/network/connections.png")}
                 alt="ECMatie student network"
                 width={700}
                 height={1400}

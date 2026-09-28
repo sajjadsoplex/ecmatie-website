@@ -8,6 +8,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { motion } from "framer-motion";
+import { assetPath } from "@/lib/assetPath";
 
 export default function Hero() {
   return (
@@ -263,7 +264,7 @@ export default function Hero() {
                 "
               >
                 <Image
-                  src="/screenshots/home/dashboard.png"
+                  src={assetPath("/screenshots/home/dashboard.png")}
                   alt="ECMatie student dashboard"
                   width={700}
                   height={1400}

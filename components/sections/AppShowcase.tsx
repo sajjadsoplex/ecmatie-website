@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { assetPath } from "@/lib/assetPath";
 
 const screenshots = [
   {
@@ -48,7 +49,7 @@ export default function AppShowcase() {
             <div key={screen.src} className="group">
               <div className="overflow-hidden rounded-[28px] border border-white/10 bg-white/5 p-2 shadow-2xl backdrop-blur">
                 <Image
-                  src={screen.src}
+                  src={assetPath(screen.src)}
                   alt={`ECMatie ${screen.title}`}
                   width={600}
                   height={1200}

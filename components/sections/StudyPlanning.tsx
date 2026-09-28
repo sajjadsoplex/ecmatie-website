@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
+import { assetPath } from "@/lib/assetPath";
 
 const points = [
   "Create and organize your subjects",
@@ -20,7 +21,7 @@ export default function StudyPlanning() {
 
               <div className="overflow-hidden rounded-[32px] border border-white bg-white p-2 shadow-[0_30px_90px_rgba(7,27,58,0.14)]">
                 <Image
-                  src="/screenshots/study/study.png"
+                  src={assetPath("/screenshots/study/study.png")}
                   alt="ECMatie study planning"
                   width={700}
                   height={1400}

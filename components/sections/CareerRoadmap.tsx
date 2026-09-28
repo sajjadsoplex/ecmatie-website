@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ArrowRight, Flag, Route } from "lucide-react";
+import { assetPath } from "@/lib/assetPath";
 
 const stages = [
   "Foundation",
@@ -59,7 +60,7 @@ export default function CareerRoadmap() {
 
             <div className="overflow-hidden rounded-[32px] border border-white bg-white p-2 shadow-[0_30px_100px_rgba(7,27,58,0.15)]">
               <Image
-                src="/screenshots/roadmap/career-roadmap.png"
+                src={assetPath("/screenshots/roadmap/career-roadmap.png")}
                 alt="ECMatie career roadmap"
                 width={700}
                 height={1400}

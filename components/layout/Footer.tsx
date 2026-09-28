@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ArrowUpRight, MessageCircle } from "lucide-react";
+import { assetPath } from "@/lib/assetPath";
 
 export default function Footer() {
   return (
@@ -9,7 +10,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Image
-              src="/brand/logo.png"
+              src={assetPath("/brand/logo.png")}
               alt="ECMatie — Your Education and Career Mate"
               width={145}
               height={60}

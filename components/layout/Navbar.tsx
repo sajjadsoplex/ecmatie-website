@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { assetPath } from "@/lib/assetPath";
 
 const navItems = [
   { label: "Features", href: "#features" },
@@ -23,7 +24,7 @@ export default function Navbar() {
             {/* Logo */}
             <a href="#" className="flex items-center">
               <Image
-                src="/brand/logo.png"
+                src={assetPath("/brand/logo.png")}
                 alt="ECMatie — Your Education and Career Mate"
                 width={125}
                 height={52}
